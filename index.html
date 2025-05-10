@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RS Stores | E-Shop</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  <!-- Sidebar Navigation -->
+  <aside class="sidebar">
+    <div class="sidebar-logo">RS Stores</div>
+    <nav>
+      <a href="#" class="sidebar-link active"><i class="fas fa-home"></i> Home</a>
+      <a href="#products" class="sidebar-link"><i class="fas fa-box"></i> Products</a>
+      <a href="#about" class="sidebar-link"><i class="fas fa-info-circle"></i> About</a>
+      <a href="#contact" class="sidebar-link"><i class="fas fa-envelope"></i> Contact</a>
+    </nav>
+    <div class="sidebar-bottom">
+      <a href="#" class="sidebar-link"><i class="fas fa-user"></i> Account</a>
+    </div>
+  </aside>
+
+  <!-- Floating Cart Button -->
+  <button class="cart-float" id="cartFloatBtn">
+    <i class="fas fa-shopping-cart"></i>
+    <span class="cart-count" id="cartCount">0</span>
+  </button>
+
+  <!-- Cart Slide-Out Panel -->
+  <div class="cart-panel" id="cartPanel">
+    <div class="cart-panel-header">
+      <span>Shopping Cart</span>
+      <button id="closeCartPanel"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="cart-panel-body" id="cartItems">
+      <p class="empty-cart">Your cart is empty.</p>
+    </div>
+    <div class="cart-panel-footer">
+      <button class="checkout-btn">Checkout</button>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main>
+    <section class="product-glass-card">
+      <div class="product-img">
+        <img id="mainProductImg" src="https://img.freepik.com/foto-premium/una-persona-che-indossa-un-paio-di-scarpe-da-ginnastica-con-la-parola-scarpa-su-di-esso_137441-14516.jpg" alt="Modern Sneakers">
+      </div>
+      <div class="product-info">
+        <h1>Modern Sneakers</h1>
+        <p class="product-desc">
+          Elevate your style with these ultra-light, breathable sneakers. Perfect for city walks, gym, or casual outings. Limited edition colorway!
+        </p>
+        <div class="price-row">
+          <span class="product-price">$129</span>
+          <span class="product-old-price">$189</span>
+          <span class="product-discount">32% OFF</span>
+        </div>
+        <div class="product-actions">
+          <div class="quantity-box">
+            <button class="qty-btn" id="decreaseQty"><i class="fas fa-minus"></i></button>
+            <input type="number" id="qtyInput" value="1" min="1" max="5" readonly>
+            <button class="qty-btn" id="increaseQty"><i class="fas fa-plus"></i></button>
+          </div>
+          <button class="add-cart-btn" id="addToCartBtn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+        <div class="thumbs-row">
+          <img class="thumb active" src="https://img.freepik.com/foto-premium/una-persona-che-indossa-un-paio-di-scarpe-da-ginnastica-con-la-parola-scarpa-su-di-esso_137441-14516.jpg" alt="Sneaker 1">
+          <img class="thumb" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0uVGeEEtl-S7l0fa0nzwAG2n426KPbDXPZpdTzwH7VlVIwUd6afhPXzxByo2AQJ0XSMI&usqp=CAU" alt="Sneaker 2">
+          <img class="thumb" src="https://img.freepik.com/premium-photo/3d-illustration-humans-lower-body-skeletal-muscular-systems-highlighted-while-running_955712-21479.jpg" alt="Sneaker 3">
+        </div>
+      </div>
+    </section>
+    <section class="minimal-reviews" id="products">
+      <h2>Customer Feedback</h2>
+      <div class="review-list">
+        <div class="review">
+          <div class="reviewer">👩‍🦰 Priya</div>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p>Super light and comfy! Love the glassy look. Fast delivery too.</p>
+        </div>
+        <div class="review">
+          <div class="reviewer">🧑‍🦱 Alex</div>
+          <div class="stars">⭐⭐⭐⭐</div>
+          <p>Stylish and fits perfectly. Would buy again!</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div id="about">
+      <p>RS Stores © 2025 &mdash; Modern Shopping Experience</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
